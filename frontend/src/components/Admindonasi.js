@@ -1,6 +1,9 @@
 import Nav from 'react-bootstrap/Nav';
 import "../App.css";
 import Table from 'react-bootstrap/Table';
+import { Link } from "react-router-dom";
+import { RiDeleteBin6Fill } from "react-icons/ri";
+import { MdEditSquare } from "react-icons/md";
 
 function Admindonasi() {
   return (
@@ -11,9 +14,9 @@ function Admindonasi() {
         <p className='page-sidebar'>AdminPage</p>
         <br></br>
         <Nav defaultActiveKey="/home" className="flex-column">
-        <Nav.Link href="/home" style={{color: 'white'}}>Informasi</Nav.Link>
-        <Nav.Link eventKey="link-1" style={{color: 'white'}}>Kursus</Nav.Link>
-        <Nav.Link eventKey="link-2" style={{color: 'white'}}>Donasi</Nav.Link>
+        <Nav.Link href="/Admininformasi" style={{color: 'white'}}>Informasi</Nav.Link>
+        <Nav.Link href="/Adminkursus" style={{color: 'white'}}>Kursus</Nav.Link>
+        <Nav.Link href="/Admindonasi" style={{color: 'white'}}>Donasi</Nav.Link>
         </Nav> 
     </div>
     
@@ -32,44 +35,86 @@ function Admindonasi() {
       </thead>
       <tbody>
         <tr>
-          <td>Ciri dan Contoh Limbah Anorganik Dan <br></br>Bahaya nya limbah Anorganik ?</td>
-          <td>Informasi umum</td>
-          <td><img src="./hutan.png" />edit</td>
-          <td>4</td>
+          <td>PRIA SATYA FAIZAL MAJID</td>
+          <td>GAMBAR</td>
+          <td>Rp 250.000</td>
+          <td>Menunggu konfirmasi</td>
+          <td> <nav className='aksi'>
+          <Nav.Link  href='https://DeleteBin6Fill.com'>
+          <RiDeleteBin6Fill />Hapus 
+          </Nav.Link>
+          
+          <Nav.Link  style={{color : 'black'}}  href='https://EditSquare.com'>
+          <MdEditSquare />Konfirmasi
+          </Nav.Link>
+          </nav></td>
         </tr>
         <tr>
-          <td>Apa itu pencemaran lingkungan Dampak <br></br>Dari Ke Deapn Terkait Lingkungan ?</td>
-          <td>Informasi Umum</td>
-          <td>Thornton</td>
-          <td><img src="./hutan.png" />edit</td>
+        <td>Parto</td>
+          <td>GAMBAR</td>
+          <td>Rp 150.000</td>
+          <td>Menunggu konfirmasi</td>
+          <td> <nav className='aksi'>
+          <Nav.Link  href='https://DeleteBin6Fill.com'>
+          <RiDeleteBin6Fill />Hapus 
+          </Nav.Link>
+          
+          <Nav.Link  style={{color : 'black'}}  href='https://EditSquare.com'>
+          <MdEditSquare />Konfirmasi
+          </Nav.Link>
+          </nav></td>
         </tr>
         <tr>
-          <td>Fakta Menarik Cendrawasih, Burung Surga ,Kakak Tua Dll.</td>
-          <td>Flora & Fauna</td>
-          <td>Thornton</td>
-          <td><img src="./hutan.png" />edit</td>
+        <td>BEJO</td>
+          <td>GAMBAR</td>
+          <td>Rp 200.000</td>
+          <td>Menunggu konfirmasi</td>
+          <td> <nav className='aksi'>
+          <Nav.Link  href='https://DeleteBin6Fill.com'>
+          <RiDeleteBin6Fill />Hapus 
+          </Nav.Link>
+          
+          <Nav.Link  style={{color : 'black'}}  href='https://EditSquare.com'>
+          <MdEditSquare />Konfirmasi
+          </Nav.Link>
+          </nav></td>
         </tr>
         <tr>
-          <td>Dampak Perubahan Iklim  Polusi Lingkungan ?</td>
-          <td>Berita</td>
-          <td>Thornton</td>
-          <td><img src="./hutan.png" />edit</td>
+        <td>Sarti</td>
+          <td>Gambar</td>
+          <td>Rp 150.000</td>
+          <td>Menunggu konfirmasi</td>
+          <td> <nav className='aksi'>
+          <Nav.Link  href='https://DeleteBin6Fill.com'>
+          <RiDeleteBin6Fill />Hapus 
+          </Nav.Link>
+          
+          <Nav.Link  style={{color : 'black'}}  href='https://EditSquare.com'>
+          <MdEditSquare />Konfirmasi
+          </Nav.Link>
+          </nav></td>
         </tr>
         <tr>
-          <td>Dampak Perubahan Iklim  Polusi Lingkungan ?</td>
-          <td>Berita</td>
-          <td>Thornton</td>
-          <td><img src="./hutan.png" />edit</td>
+        <td>Sarton</td>
+          <td>Gambar</td>
+          <td>Rp 250.000</td>
+          <td>Menunggu konfirmasi</td>
+          <td> <nav className='aksi'>
+          <Nav.Link  href='https://DeleteBin6Fill.com'>
+          <RiDeleteBin6Fill />Hapus 
+          </Nav.Link>
+          
+          <Nav.Link  style={{color : 'black'}}  href='https://EditSquare.com'>
+          <MdEditSquare />Konfirmasi
+          </Nav.Link>
+          </nav></td>
         </tr>
       </tbody>
     </Table>
-    <br></br>
-    <button className='butonadmin' type="submit">Tambahkan</button>
+    
     </div>
     </div>
   );
 }
 
 export default Admindonasi;
-
-
