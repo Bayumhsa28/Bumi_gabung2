@@ -205,6 +205,8 @@ Nav svg {
   border-radius: 10px;
   width: 400px;
   margin: 30px auto;
+  justify-content: top;
+  text-align: start;
   padding: 5px;
   box-sizing: border-box;
   display: flex;
