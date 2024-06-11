@@ -201,12 +201,19 @@ Nav svg {
 }
 
 .konten {
-  padding-top: 140px;
+  height: 140px;
   border-radius: 10px;
-  padding-right: 400px;
+  width: 400px;
+  margin: 30px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  resize: vertical;
 }
 .inputtambah {
-  padding-right: 400px;
+  width: 410px;
+  padding-right: 10px;
 }
 .buttonn {
   text-align: center;
